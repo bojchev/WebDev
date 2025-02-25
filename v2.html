@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette</title>
+    <style>
+        body {
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        .color-box {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+            transition: transform 0.3s ease-in-out;
+            border: 1px solid #000;
+        }
+        .color-box:hover {
+            transform: scale(1.1);
+        }
+        .black { background-color: #000000; }
+        .red { background-color: #FF0000; }
+        .green { background-color: #00FF00; }
+        .blue { background-color: #0000FF; }
+        .fuchsia { background-color: #FF00FF; }
+        .white { background-color: #FFFFFF; color: black; }
+        .yellow { background-color: #FFFF00; color: black; }
+        .purple { background-color: #800080; }
+        .maroon { background-color: #800000; }
+        .olive { background-color: #808000; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="color-box black">Black<br>#000000</div>
+        <div class="color-box red">Red<br>#FF0000</div>
+        <div class="color-box green">Green<br>#00FF00</div>
+        <div class="color-box blue">Blue<br>#0000FF</div>
+        <div class="color-box fuchsia">Fuchsia<br>#FF00FF</div>
+        <div class="color-box white">White<br>#FFFFFF</div>
+        <div class="color-box yellow">Yellow<br>#FFFF00</div>
+        <div class="color-box purple">Purple<br>#800080</div>
+        <div class="color-box maroon">Maroon<br>#800000</div>
+        <div class="color-box olive">Olive<br>#808000</div>
+    </div>
+</body>
+</html>
